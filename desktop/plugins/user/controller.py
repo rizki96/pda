@@ -24,7 +24,7 @@ class StartupCommand(puremvc.patterns.command.SimpleCommand, puremvc.interfaces.
         web_proxy = main_facade.retrieveProxy(model.WebServerProxy.NAME)
         path = "%s/%s" % (utils.root_dir(), self.facade.PLUGIN_DIR)
         static_dir = '%s/html' % (path,)
-        web_proxy.tree_mount(self.facade.module_name, http_root.UserRoot(), static_dir,
+        web_proxy.tree_mount(self.facade.PLUGIN_NAME, http_root.UserRoot(), static_dir,
                              orm_base_obj=vo.Base,
                              db_plugin=
                              utils.db_str_conn("user.db",
