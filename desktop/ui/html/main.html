@@ -1,0 +1,50 @@
+<html lang="en" ng-app="mainApp">
+<head>
+    <meta charset="UTF-8">
+    <title>$TITLE</title>
+	<link rel="stylesheet" type="text/css" href="$BASE_PATH/ui/html/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="$BASE_PATH/ui/html/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+
+    <script src="$BASE_PATH/ui/html/bower_components/angular/angular.js"></script>
+    <script src="$BASE_PATH/ui/html/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="$ASIDE_JS"></script>
+    <script src="$BASE_PATH/ui/html/js/app.js"></script>
+    <script src="$BASE_PATH/ui/html/js/main.js"></script>
+
+</head>
+<body ng-controller="MainCtrl">
+
+    <div>
+
+        <tabset style="margin: 10px;">
+            <tab heading="Welcome">
+
+            </tab>
+            <tab heading="Setting">
+                <div class="container-fluid">
+                </div>
+            </tab>
+            <tab heading="Logging">
+                <div class="container-fluid">
+                </div>
+            </tab>
+        </tabset>
+
+        <script type="text/ng-template" id="myModalContent.html">
+            <div class="modal-header">
+                <h3>I'm a modal!</h3>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" ng-click="ok()">OK</button>
+                <!--button class="btn btn-warning" ng-click="cancel()">Cancel</button-->
+            </div>
+        </script>
+
+        <!--button class="btn" ng-click="open()">Login</button-->
+    </div>
+
+</body>
+</html>

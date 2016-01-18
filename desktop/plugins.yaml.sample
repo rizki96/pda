@@ -1,0 +1,27 @@
+user:
+  name: PDA User Management
+  module: plugins.user
+
+#queue:
+#  name: PDA Queue Management
+#  module: plugins.queue
+
+#family_tree
+#  name: Family Tree Database
+#  module: plugins.family_tree
+
+bank_account:
+  name: Bank Account & Transaction
+  module: plugins.bank_account
+
+transaction_tag:
+  name: Transaction Tag
+  module: plugins.transaction_tag
+
+#product_inventory:
+#  name: Product Inventory
+#  module: plugins.product_inventory
+
+#product_catalogue:
+#  name: Product Catalogue
+#  module: plugins.product_catalogue

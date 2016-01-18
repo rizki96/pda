@@ -1,0 +1,8 @@
+cherrypy
+yaml
+sqlalchemy
+sqlalchemy-migrate
+pysqlite
+pysqlcipher
+git+http://github.com/rizki96/angular-side
+git+http://github.com/PureMVC/puremvc-python-multicore-framework.git
