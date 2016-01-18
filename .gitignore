@@ -60,3 +60,6 @@ target/
 
 # ignore config
 *.yaml
+
+# database
+*.db
