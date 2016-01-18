@@ -6,6 +6,6 @@
 [subrepo]
 	remote = git@github.com:rizki96/pda-plugins.git
 	branch = master
-	commit = 77f02a29ee2235c45b5bdf5a73c91af96018e312
-	parent = 1598f923bdd7e686b7a227c00844052f674afa56
+	commit = e9026f2b57fb39aad7914278d805b3657b979e10
+	parent = 8eadf2bff5f40a59c6570992bd7c4565bc658a8d
 	cmdver = 0.2.3
