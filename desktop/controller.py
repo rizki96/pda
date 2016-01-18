@@ -70,9 +70,6 @@ class StartupCommand(puremvc.patterns.command.SimpleCommand, puremvc.interfaces.
     def _on_shutdown(event):
         logging.info('main: shutdown')
         facade = main.MainAppFacade.getInstance("mainAppKey")
-        #wp_obj = facade.retrieveProxy(model.WebParseProxy.NAME)
-        #if wp_obj:
-        #    wp_obj.__deinit__()  # must quit browser
         ws_obj = facade.retrieveProxy(model.WebServerProxy.NAME)
         if ws_obj:
             ws_obj.stop()
