@@ -1,0 +1,2 @@
+# pda
+Pluginizer Desktop App
