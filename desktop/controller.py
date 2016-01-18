@@ -46,7 +46,7 @@ class StartupCommand(puremvc.patterns.command.SimpleCommand, puremvc.interfaces.
                         facade = plugin_facade_cls.getInstance(key=key)
                         if facade:
                             logging.info('%s: plugin loaded' % key)
-                            facade.module_name = key
+                            facade.PLUGIN_NAME = key
                         # calling startup
                         facade.sendNotification(facade.STARTUP, main_panel)
                     except Exception, e:
