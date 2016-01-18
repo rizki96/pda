@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:rizki96/pda-plugins.git
+	branch = master
+	commit = a4bda1c6ce19a57441f2fb7fc3d752c1c9930f17
+	parent = 9be4f6d8d36bffc3fcb6366fd30bb689895d3506
+	cmdver = 0.2.3
