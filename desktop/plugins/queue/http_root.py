@@ -1,8 +1,8 @@
 import cherrypy
 
 
-class QueueRoot(object):
+class QueueHTTPRoot(object):
 
     @cherrypy.expose
     def index(self):
-        return 'QueueRoot is ready!'
+        return 'QueueHTTPRoot is ready!'

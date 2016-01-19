@@ -1,8 +1,8 @@
 import cherrypy
 
 
-class UserRoot(object):
+class UserHTTPRoot(object):
 
     @cherrypy.expose
     def index(self):
-        return 'UserRoot is ready!'
+        return 'UserHTTPRoot is ready!'
