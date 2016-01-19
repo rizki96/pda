@@ -16,8 +16,7 @@ from aside import pages, events, components
 
 class MainFormMediator(puremvc.patterns.mediator.Mediator, puremvc.interfaces.IMediator):
 
-    NAME = 'WebFormMediator'
-    pageHub = None
+    NAME = 'MainFormMediator'
 
     def __init__(self, viewComponent):
         super(MainFormMediator, self).__init__(MainFormMediator.NAME, viewComponent)
@@ -43,9 +42,7 @@ class MainFormMediator(puremvc.patterns.mediator.Mediator, puremvc.interfaces.IM
 
     def load_form(self, params):
         current_path = utils.root_dir()
-        #logging.info(current_path)
-        aside_js = None
         variables = params["vars"] if "vars" in params else {}
-        content = pages.retrieve(params["name"], BASE_PATH=current_path, ASIDE_JS=aside_js, TITLE=params["title"],
+        content = pages.retrieve(params["name"], BASE_PATH=current_path, ASIDE_JS=None, TITLE=params["title"],
                                  **variables)
         self.viewComponent.webView.setHtml(*content)
