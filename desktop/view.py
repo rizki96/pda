@@ -26,13 +26,13 @@ class MainFormMediator(puremvc.patterns.mediator.Mediator, puremvc.interfaces.IM
 
     def listNotificationInterests(self):
         return [
-            main.MainAppFacade.SHOW_FORM,
+            main.MainAppFacade.DISPLAY_PAGE,
         ]
 
     def handleNotification(self, note):
         note_name = note.getName()
 
-        if note_name == main.MainAppFacade.SHOW_FORM:
+        if note_name == main.MainAppFacade.DISPLAY_PAGE:
             params = dict(note.getBody())
             self.load_form(params)
 

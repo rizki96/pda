@@ -27,14 +27,15 @@ class StartupCommand(puremvc.patterns.command.SimpleCommand, puremvc.interfaces.
         main_panel = note.getBody()
 
         # first running the webserver
-        self.facade.registerProxy(model.WebServerProxy(main_panel,
-                                                       config={'host': '127.0.0.1', 'port': 12345,
-                                                               #'path': '%s/ui/html' % utils.root_dir()
-                                                               'path': None,
-                                                                },
-                                                       http_root_obj=http_root.MainHttpRoot(),
-                                                       orm_base_obj=vo.Base,
-                                                       db_plugin=utils.db_str_conn('mainapp.db')),)
+        #self.facade.registerProxy(model.WebServerProxy(main_panel,
+        #                                               config={'host': '127.0.0.1', 'port': 12345,
+        #                                                       #'path': '%s/ui/html' % utils.root_dir()
+        #                                                       'path': None,
+        #                                                        },
+        #                                               http_root_obj=http_root.MainHttpRoot(),
+        #                                               orm_base_obj=vo.Base,
+        #                                               db_plugin=utils.db_str_conn('mainapp.db')),)
+        self.facade.registerProxy(model.WebServerProxy(main_panel))
 
         with open('%s/plugins.yaml' % utils.root_dir()) as stream:
             cfg = yaml.safe_load(stream)

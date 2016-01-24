@@ -11,7 +11,7 @@ import components
 class MainAppFacade(AsideFacade):
 
     # view
-    SHOW_FORM = "showForm"
+    DISPLAY_PAGE = "displayPage"
 
     # command
     STARTUP = 'startup'
